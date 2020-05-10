@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>zeichenkettentrennungsapp</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Zeichenkettentrennungsmaschine</h1>
+    </div>
+    <form action="#">
+        <label for="Zu trennende Zeichenkette">Zu trennende Zeichenkette:</label>
+        <input type="text" id="eingabe">
+        <label for="trennungsposition">Zeichenkette für die Trennungsposition</label>
+        <input type="text" id="trennungsposition">
+        <div id="position">
+            <label for="davor">Davor trennen:</label>
+        <input type="radio" name="radio" id="radioDavor" value="davor">
+        <label for="danach">Danach trennen:</label>
+        <input type="radio" name="radio" id="radioDanach" value="danach">
+        </div>
+    
+        <button onclick="trennen()">Absenden</button>
+        <div class="ausgabe">
+            <h3>Ausgabe:</h3>
+            <div id="vorderTeil">
+                Vorderer Teil:
+            </div>
+            <div id="hintererTeil">
+                Hinterer Teil:
+            </div>
+            <div id="default"></div>
+        </div>
+
+
+
+
+
+
+    </form>
+    
+    <script src="main.js"></script>
+</body>
+</html>
