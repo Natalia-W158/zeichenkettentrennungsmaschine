@@ -7,10 +7,11 @@
     <title>zeichenkettentrennungsapp</title>
 </head>
 <body>
-    <div class="box">
-        <h1>Zeichenkettentrennungsmaschine</h1>
-    </div>
-    <form action="#">
+
+    <form action="#" id="container">
+        <div class="box">
+            <h1>Zeichenkettentrennungsmaschine</h1>
+        </div>
         <label for="Zu trennende Zeichenkette">Zu trennende Zeichenkette:</label>
         <input type="text" id="eingabe">
         <label for="trennungsposition">Zeichenkette für die Trennungsposition</label>
@@ -23,7 +24,10 @@
         </div>
     
         <button onclick="trennen()">Absenden</button>
-
+        <button onclick="goodbye()">Reset</button>
+        <div class="outer-ausgabe">
+        <div class="outer-ausgabe">
+        <div class="outer-ausgabe">
         <div class="ausgabe">
             <h3>Ausgabe:</h3>
             <p>Vorderer Teil:</p>
@@ -34,6 +38,9 @@
             </div>
             <div id="default"></div>
         </div>
+        </div>
+    </div>
+    </div>
 
 
 

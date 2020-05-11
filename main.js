@@ -18,11 +18,11 @@ if ( davor.checked){
 
     ausgabeVorne.innerHTML = (zeichenkette.split(trennung)[0])+ " " + trennung;
     ausgabeHinten.innerHTML = (zeichenkette.split(trennung)[1]) ;
-
-
-}
-
-    
-
+} 
 
 }
+
+function goodbye() {
+    eingabe.value = " ";
+    trennungsposition.value = " ";
+} 
