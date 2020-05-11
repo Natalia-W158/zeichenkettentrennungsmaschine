@@ -17,19 +17,20 @@
         <input type="text" id="trennungsposition">
         <div id="position">
             <label for="davor">Davor trennen:</label>
-        <input type="radio" name="radio" id="radioDavor" value="davor">
+        <input type="radio" name="radio" id="radioDavor" value="davor" checked="checked">
         <label for="danach">Danach trennen:</label>
         <input type="radio" name="radio" id="radioDanach" value="danach">
         </div>
     
         <button onclick="trennen()">Absenden</button>
+
         <div class="ausgabe">
             <h3>Ausgabe:</h3>
+            <p>Vorderer Teil:</p>
             <div id="vorderTeil">
-                Vorderer Teil:
             </div>
+            <p>Hinterer Teil:</p>
             <div id="hintererTeil">
-                Hinterer Teil:
             </div>
             <div id="default"></div>
         </div>

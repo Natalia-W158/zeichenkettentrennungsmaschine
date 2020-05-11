@@ -1,27 +1,28 @@
-function trennen() {
+function trennen(){
+event.preventDefault();
 
 let zeichenkette = document.getElementById("eingabe").value;
 let trennung = document.getElementById("trennungsposition").value;
-let davor = document.getElementById("radioDavor").value;
-let danach = document.getElementById("radioDanach").value;
+let davor = document.getElementById("radioDavor");
+let danach = document.getElementById("radioDanach");
 let ausgabeVorne =document.getElementById("vorderTeil");
 let ausgabeHinten = document.getElementById("hintererTeil");
-let position = document.getElementById("position").value;
 
-    switch (position){
 
-        case "davor":
-            zeichenkette.split("trennung");
-            ausgabeVorne.innerHTML = zeichenkette;
-    break;
+if ( davor.checked){
 
-        case "danach":
-            zeichenkette.split("trennung")
-            ausgabeVorne.innerHTML =zeichenkette.length;
-    break;
-    default: 
+    ausgabeVorne.innerHTML = (zeichenkette.split(trennung)[0]);
+    ausgabeHinten.innerHTML = trennung + " " + (zeichenkette.split(trennung)[1]) ;
 
-    document.getElementById("default").innerHTML ="invalid";
-        }
+} else{
+
+    ausgabeVorne.innerHTML = (zeichenkette.split(trennung)[0])+ " " + trennung;
+    ausgabeHinten.innerHTML = (zeichenkette.split(trennung)[1]) ;
+
+
 }
 
+    
+
+
+}
